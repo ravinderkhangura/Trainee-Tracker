@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="600.0" style="-fx-border-color: #c97200; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.DashboardController">
+   <children>
+      <Label alignment="CENTER" layoutX="104.0" layoutY="2.0" prefHeight="66.0" prefWidth="403.0" text="Trainee Tracker" textFill="#679871">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="45.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="bm" fitHeight="129.0" fitWidth="131.0" layoutX="41.0" layoutY="70.0" onMouseClicked="#batchmaster" onMouseEntered="#bmzoom" onMouseExited="#bmunzoom" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <SepiaTone />
+         </effect>
+         <image>
+            <Image url="@icon_jobAsDeveloper@2x.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="reg" fitHeight="153.0" fitWidth="164.0" layoutX="224.0" layoutY="57.0" onMouseClicked="#reg" onMouseEntered="#regzoom" onMouseExited="#regunzoom" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <SepiaTone />
+         </effect>
+         <image>
+            <Image url="@Career-Icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fc" fitHeight="146.0" fitWidth="159.0" layoutX="409.0" layoutY="57.0" onMouseClicked="#fc" onMouseEntered="#fczoom" onMouseExited="#fcunzoom" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <SepiaTone />
+         </effect>
+         <image>
+            <Image url="@Indian_Rupee_Currency-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fi" fitHeight="129.0" fitWidth="140.0" layoutX="48.0" layoutY="260.0" onMouseClicked="#fi" onMouseEntered="#fizoom" onMouseExited="#fiunzoom" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <SepiaTone />
+         </effect>
+         <image>
+            <Image url="@5-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bi" fitHeight="140.0" fitWidth="129.0" layoutX="241.0" layoutY="252.0" onMouseClicked="#bi" onMouseEntered="#bizoom" onMouseExited="#biunzoom" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <SepiaTone />
+         </effect>
+         <image>
+            <Image url="@require-personal-qualities-planning-responsibility-checkmark-list-369ec7728b791ad2-512x512.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logout" fitHeight="140.0" fitWidth="143.0" layoutX="420.0" layoutY="248.0" onMouseClicked="#logout" onMouseEntered="#logoutzoom" onMouseExited="#logoutunzoom" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <SepiaTone />
+         </effect>
+         <image>
+            <Image url="@icon-04.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="bmtxt" layoutX="61.0" layoutY="189.0" prefHeight="43.0" prefWidth="103.0" text="Batch Master" textFill="#001aff">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="regtxt" layoutX="259.0" layoutY="196.0" prefHeight="30.0" prefWidth="94.0" text="Registeration" textFill="#001aff">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="fctxt" layoutX="443.0" layoutY="199.0" prefHeight="30.0" prefWidth="94.0" text="Fee Collector" textFill="#001aff">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="bitxt" layoutX="276.0" layoutY="382.0" prefHeight="30.0" prefWidth="94.0" text="Batch Info" textFill="#001aff">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="fitxt" layoutX="83.0" layoutY="389.0" prefHeight="30.0" prefWidth="59.0" text="Fee Info" textFill="#001aff">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

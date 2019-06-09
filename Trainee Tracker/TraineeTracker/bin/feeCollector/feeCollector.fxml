@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: #c97200; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="feeCollector.feeCollectorController">
+   <children>
+      <Label alignment="CENTER" layoutX="115.0" layoutY="15.0" prefHeight="66.0" prefWidth="403.0" text="Fee Collector" textFill="#679871">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="296.0" layoutY="106.0" prefHeight="39.0" prefWidth="125.0" text="Registeration Id">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fsname" layoutX="426.0" layoutY="164.0" prefHeight="25.0" prefWidth="134.0" promptText="select" />
+      <Label layoutX="307.0" layoutY="156.0" prefHeight="39.0" prefWidth="113.0" text="Student Name">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fid" layoutX="427.0" layoutY="115.0" prefHeight="25.0" prefWidth="79.0" promptText="select" />
+      <Label layoutX="272.0" layoutY="212.0" prefHeight="39.0" prefWidth="86.0" text="Course Fee">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ftotalfee" layoutX="357.0" layoutY="219.0" prefHeight="25.0" prefWidth="73.0" promptText="select" />
+      <Label layoutX="435.0" layoutY="212.0" prefHeight="39.0" prefWidth="61.0" text="Balance">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fbalance" layoutX="492.0" layoutY="219.0" prefHeight="25.0" prefWidth="73.0" promptText="select" />
+      <Label layoutX="305.0" layoutY="270.0" prefHeight="39.0" prefWidth="113.0" text="Recieved Now">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="frecievednow" layoutX="428.0" layoutY="278.0" prefHeight="25.0" prefWidth="73.0" promptText="select" />
+      <Button layoutX="462.0" layoutY="331.0" mnemonicParsing="false" onAction="#doupdatefee" prefHeight="32.0" prefWidth="79.0" style="-fx-background-color: #679871;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="fetchfee" layoutX="516.0" layoutY="115.0" mnemonicParsing="false" onAction="#dofetch" text="Fetch" />
+      <ImageView fitHeight="269.0" fitWidth="253.0" layoutX="14.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Indian_Rupee_Currency-256.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="back" fitHeight="47.0" fitWidth="68.0" layoutX="35.0" layoutY="26.0" onMouseClicked="#goback" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@button-1905961_960_720.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
